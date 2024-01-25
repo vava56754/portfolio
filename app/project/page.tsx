@@ -45,7 +45,7 @@ export default function Page() {
                                             <Image
                                                 src="/biointer/menu.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={400}
                                                 priority
@@ -60,7 +60,7 @@ export default function Page() {
                                             <Image
                                                 src="/biointer/produit-1.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={400}
                                                 priority
@@ -73,7 +73,7 @@ export default function Page() {
                                             <Image
                                                 src="/biointer/produit-2.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={100}
                                                 priority
@@ -85,7 +85,7 @@ export default function Page() {
                                             <Image
                                                 src="/biointer/produit-3.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={600}
                                                 height={100}
                                                 priority
@@ -99,7 +99,7 @@ export default function Page() {
                                             <Image
                                                 src="/biointer/produit-4.png"
                                                 alt="Val Photo"
-                                                className="dark:invert  rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={100}
                                                 priority
@@ -113,7 +113,7 @@ export default function Page() {
                                             <Image
                                                 src="/biointer/admin-produit.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={100}
                                                 priority
@@ -186,7 +186,7 @@ export default function Page() {
                                             <Image
                                                 src="/ableton/ensemble.png"
                                                 alt="ensemble"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={100}
                                                 priority
@@ -202,7 +202,7 @@ export default function Page() {
                                             <Image
                                                 src="/ableton/editeur.png"
                                                 alt="editeur"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={100}
                                                 priority
@@ -217,7 +217,7 @@ export default function Page() {
                                             <Image
                                                 src="/ableton/nav.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={700}
                                                 height={100}
                                                 priority
@@ -232,7 +232,7 @@ export default function Page() {
                                             <Image
                                                 src="/ableton/effet.png"
                                                 alt="Val Photo"
-                                                className="dark:invert rounded-md cursor-pointer"
+                                                className="rounded-md cursor-pointer"
                                                 width={900}
                                                 height={200}
                                                 priority
@@ -263,7 +263,7 @@ export default function Page() {
                         <Image
                             src={selectedImage}
                             alt="Enlarged Image"
-                            className="dark:invert rounded-md cursor-pointer"
+                            className="rounded-md cursor-pointer"
                             width={1920}
                             height={1080}
                             priority
