@@ -10,7 +10,7 @@ function PopUp({ closePopUp }: Readonly<{ closePopUp: () => void }>) {
                 <Image
                     src="/IMG_0985.jpeg"
                     alt="profile"
-                    className="dark:invert object-none object-top w-24 h-24 rounded-full cursor-pointer"
+                    className="object-none object-top w-24 h-24 rounded-full cursor-pointer"
                     width={100}
                     height={24}
                     priority
