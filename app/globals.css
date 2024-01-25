@@ -2,28 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
 }
 
 @layer utilities {
@@ -31,3 +29,67 @@ body {
     text-wrap: balance;
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.expanded {
+  max-height: auto; /* Remplacez la valeur par la hauteur maximale que vous souhaitez */
+  overflow: hidden;
+  opacity: 1;
+}
+
+.expanded-content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; /* Ajoutez la transition d'opacité */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.close-button {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-weight: bolder;
+}
+
+
+
+.hover-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.relative:hover .hover-overlay {
+  opacity: 0.7;
+}
+
+
