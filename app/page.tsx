@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <Carousel src="/wallpaper.jpg" alt="project" ligne1="Je suis Valentin" ligne2="Hello," />
       <div className="m-16 text-center text-2xl border-b-4  border-black">
-        <h1 className="my-4">Plus d'info sur moi</h1>
+        <h1 className="my-4">Plus d&apos;info sur moi</h1>
       </div>
       <Layout/>
       <div className="m-16 text-center text-2xl border-b-4  border-black">

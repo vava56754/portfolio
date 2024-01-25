@@ -10,8 +10,8 @@ export default function Music() {
                 <h1 className="my-4">Mon EP (extended play)</h1>
             </div>
             <div className="text-center text-xl">
-                <p>Au cours de mon année sabbatique j'ai réalisé un EP instrumental appelé <strong>'DOUBLE FACE'</strong> dans les styles Pop Rock, Electro et Lofi.</p>
-                <p>Des styles qui s'écoutent facilement en fond comme par exemple lorsqu'on développe !</p>
+                <p>Au cours de mon année sabbatique j&apos;ai réalisé un EP instrumental appelé <strong>&apos;DOUBLE FACE&apos;</strong> dans les styles Pop Rock, Electro et Lofi.</p>
+                <p>Des styles qui s&apos;écoutent facilement en fond comme par exemple lorsqu&apos;on développe !</p>
             </div>
             <div className="my-8 flex flex-col justify-center items-center">
                 <Image

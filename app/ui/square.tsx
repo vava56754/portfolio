@@ -26,7 +26,7 @@ const Square: React.FC<SquareProps> = ({ title, content }) => {
             
             {infoVisible && (
                 <div className="text-center">
-                    <p>Plus d'info</p>
+                    <p>Plus d&apos;info</p>
                     <p>+</p>
                 </div>
             )}
