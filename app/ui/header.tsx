@@ -1,7 +1,7 @@
 'use client'
 import NavLinks from "./nav-links";
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function PopUp({ closePopUp }: Readonly<{ closePopUp: () => void }>) {
     return (
@@ -33,6 +33,21 @@ function PopUp({ closePopUp }: Readonly<{ closePopUp: () => void }>) {
 export default function Header() {
     const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
+    const [isElementVisible, setElementVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setElementVisible(scrollY < 40);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     const openPopUp = () => {
         setIsPopUpOpen(true);
     };
@@ -41,9 +56,9 @@ export default function Header() {
         setIsPopUpOpen(false);
     };
         return (
-        <div className="fixed z-20 flex w-full flex-col items-center justify-between px-14 py-2 bg-white text-gray md:flex-row">
+        <div className="fixed z-20 flex w-full flex-col items-center justify-between px-14 py-2 bg-white text-gray shadow-md md:flex-row">
             <div>
-                <button onClick={openPopUp} className="font-bolder flex flex-row gap-5 items-center">
+                <button onClick={openPopUp} className={`font-bolder flex flex-row gap-5 items-center transition-all duration-200 ${isElementVisible ? 'opacity-100 h-24' : 'opacity-0 pointer-events-none h-4'}`}>
                     <div>
                         <Image
                             src="/IMG_0985.jpeg"

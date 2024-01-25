@@ -22,6 +22,7 @@
 
 body {
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -47,6 +48,7 @@ body {
 
 .modal-overlay {
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -65,7 +67,7 @@ body {
 }
 
 .close-button {
-  background-color: white;
+  background-color: red;
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -73,7 +75,7 @@ body {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
-  color: red;
+  color: white;
   font-weight: bolder;
 }
 

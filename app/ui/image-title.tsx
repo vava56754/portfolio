@@ -23,7 +23,7 @@ const Carousel: React.FC<{ src: string; alt: string; ligne1: string; ligne2: str
           </div>
         </div>
         <div>
-            <button className="mt-8 bg-black text-white px-3 py-1 rounded" onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}>
+            <button className="mt-8 bg-black text-white px-3 py-1 rounded" onClick={() => window.scrollTo({ top: 640, behavior: "smooth" })}>
                 En savoir plus
             </button>
         </div>   
