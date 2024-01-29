@@ -8,9 +8,9 @@ function PopUp({ closePopUp }: Readonly<{ closePopUp: () => void }>) {
         <div className="fixed z-10 bg-white p-4 rounded shadow-md top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="my-3">
                 <Image
-                    src="/IMG_0985.jpeg"
+                    src="/profile.jpg"
                     alt="profile"
-                    className="object-none object-top w-24 h-24 rounded-full cursor-pointer"
+                    className="object-none object-fill w-24 h-24 rounded-full cursor-pointer"
                     width={100}
                     height={24}
                     priority
@@ -61,9 +61,9 @@ export default function Header() {
                 <button onClick={openPopUp} className={`font-bolder flex flex-row gap-5 items-center transition-all duration-200 ${isElementVisible ? 'opacity-100 h-24' : 'opacity-0 pointer-events-none h-4'}`}>
                     <div>
                         <Image
-                            src="/IMG_0985.jpeg"
+                            src="/profile.jpg"
                             alt="Val Photo"
-                            className="object-none object-top min-w-24 h-24 rounded-full cursor-pointer"
+                            className="object-none object-fill min-w-24 h-24 rounded-full cursor-pointer"
                             width={100}
                             height={24}
                             priority
