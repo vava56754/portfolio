@@ -36,14 +36,14 @@ body {
 }
 
 .expanded {
-  max-height: auto; /* Remplacez la valeur par la hauteur maximale que vous souhaitez */
+  max-height: auto; 
   overflow: hidden;
   opacity: 1;
 }
 
 .expanded-content {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out; /* Ajoutez la transition d'opacité */
+  transition: opacity 0.3s ease-in-out; 
 }
 
 .modal-overlay {

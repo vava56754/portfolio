@@ -14,7 +14,11 @@ export default function Footer() {
                 </div>
             </div>
             <div>
-                <h2 className="text-3xl font-bold mb-4">Mes reseaux</h2>
+                <h2 className="text-3xl font-bold mb-4">Mes réseaux</h2>
+                <div className="mb-4">
+                    <p className="text-lg font-semibold">LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/valentin-peyratout/">Valentin Peyratout</a>
+                </div>
                 <div className="mb-4">
                     <p className="text-lg font-semibold">Instagram</p>
                     <a href="https://www.instagram.com/valentin_peyratout/">TheVal</a>

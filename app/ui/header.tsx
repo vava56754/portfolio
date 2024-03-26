@@ -18,9 +18,9 @@ function PopUp({ closePopUp }: Readonly<{ closePopUp: () => void }>) {
             </div>
             <div className="text-left">
                 <h1>Valentin Peyratout</h1>
-                <h2>22 ans</h2>
+                <h2>23 ans</h2>
                 <h2>Bordeaux</h2>
-                <h2>Recherche un post de Développeur Full Stack</h2>
+                <h2>Recherche une alternance de Développeur Web</h2>
             </div>
             <button onClick={closePopUp} className="mt-4 bg-black text-white px-3 py-1 rounded">
                 Fermer

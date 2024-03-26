@@ -93,6 +93,8 @@ const Layout: React.FC = () => {
           <p>Utilisation de langages tels que:</p>
           <div className="flex flex-col md:flex-row md:my-8">
             <SkillImage src="/java-4-logo.svg" alt="Java Logo" label="Java" />
+            <SkillImage src="/JavaScript_logo_2.svg" alt="JS Logo" label="JS" />
+            <SkillImage src="/TypeScript_logo_2020.svg" alt="TS Logo" label="TS" />
             <SkillImage src="/php-1-logo.svg" alt="PHP Logo" label="PHP" />
           </div>
 
