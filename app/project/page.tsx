@@ -33,7 +33,7 @@ export default function Page() {
                         <div className="max-w-3xl mx-auto">
                             <div className="mb-8">
                                 <h2 className="text-3xl font-bold mb-4">Contexte</h2>
-                                <p className="mb-2">Ce projet remonte au BTS. Il s&apos;agit d&apos;un de mes projets de stage, que j&apos;ai décidé de refaire avec de nouvelles technologies plus adaptées et de mettre en pratique mes nouvelles connaissances.</p>
+                                <p className="mb-2">Ce projet date du BTS. Il s&apos;agit d&apos;un de mes projets de stage, que j&apos;ai décidé de refaire avec de nouvelles technologies plus adaptées et de mettre en pratique mes nouvelles connaissances.</p>
                                 <p className="mb-2">Le projet consistait à réaliser un site web où l&apos;on pouvait réserver des produits cosmétiques et avoir une présentation de l&apos;entreprise. L&apos;entreprise ne souhaitant pas de paiement en ligne, m&apos;a indiqué d&apos;informer les utilisateurs par mail que leurs commandes peuvent être prises et compte, validées (lorsque le paiement est réalisé) et livrées à leur domicile.</p>
                                 <p>Les produits appartiennent à une maison (marque).</p>
                             </div>
@@ -41,9 +41,9 @@ export default function Page() {
                                 <h2 className="text-3xl font-bold mb-4">Aperçu</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                     <div className="mb-4 relative">
-                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/menu.png", event)}>
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/accueil.png", event)}>
                                             <Image
-                                                src="/biointer/menu.png"
+                                                src="/biointer/accueil.png"
                                                 alt="Val Photo"
                                                 className="rounded-md cursor-pointer"
                                                 width={700}
@@ -56,9 +56,9 @@ export default function Page() {
                                         <p className="mt-2">Page d&apos;accueil avec un défilement d&apos;images et du texte de présentation.</p>
                                     </div>
                                     <div className="mb-4 relative">
-                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit-1.png",event)}>
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit.png",event)}>
                                             <Image
-                                                src="/biointer/produit-1.png"
+                                                src="/biointer/produit.png"
                                                 alt="Val Photo"
                                                 className="rounded-md cursor-pointer"
                                                 width={700}
@@ -69,9 +69,9 @@ export default function Page() {
                                         <p className="mt-2">Page des produits où l&apos;on peut trier par type (crème, shampoing) ou partie du corps (cheveux, visage, main).</p>
                                     </div>
                                     <div className="mb-4 relative">
-                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit-2.png", event)}>
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit_2.png", event)}>
                                             <Image
-                                                src="/biointer/produit-2.png"
+                                                src="/biointer/produit_2.png"
                                                 alt="Val Photo"
                                                 className="rounded-md cursor-pointer"
                                                 width={700}
@@ -81,9 +81,9 @@ export default function Page() {
                                         </div>
                                     </div>
                                     <div className="mb-4 relative">
-                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit-3.png", event)}>
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit_3.png", event)}>
                                             <Image
-                                                src="/biointer/produit-3.png"
+                                                src="/biointer/produit_3.png"
                                                 alt="Val Photo"
                                                 className="rounded-md cursor-pointer"
                                                 width={600}
@@ -92,12 +92,12 @@ export default function Page() {
                                             />
                                         </div>
                                         
-                                        <p className="mt-2">Page d&apos;un des produits avec le nom la quantité a réserver, et les details qui le concerne.</p>
+                                        <p className="mt-2">Page d&apos;un produit avec le nom la quantité a réserver, et les details qui le concerne.</p>
                                     </div>
                                     <div className="mb-4 relative">
-                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit-4.png", event)}>
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/search.png", event)}>
                                             <Image
-                                                src="/biointer/produit-4.png"
+                                                src="/biointer/search.png"
                                                 alt="Val Photo"
                                                 className="rounded-md cursor-pointer"
                                                 width={700}
@@ -109,9 +109,37 @@ export default function Page() {
                                         <p className="mt-2">Recherche dynamique d&apos;un produit.</p>
                                     </div>
                                     <div className="mb-4 relative">
-                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/admin-produit.png", event)}>
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/panier.png", event)}>
                                             <Image
-                                                src="/biointer/admin-produit.png"
+                                                src="/biointer/panier.png"
+                                                alt="Val Photo"
+                                                className="rounded-md cursor-pointer"
+                                                width={700}
+                                                height={100}
+                                                priority
+                                            />
+                                        </div>
+                                        
+                                        <p className="mt-2">Panier de l&apos;utilisateur qui a réservé des produits</p>
+                                    </div>
+                                    <div className="mb-4 relative">
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/commande.png", event)}>
+                                            <Image
+                                                src="/biointer/commande.png"
+                                                alt="Val Photo"
+                                                className="rounded-md cursor-pointer"
+                                                width={700}
+                                                height={100}
+                                                priority
+                                            />
+                                        </div>
+                                        
+                                        <p className="mt-2">Commande en cours de validation par l&apos;administrateur</p>
+                                    </div>
+                                    <div className="mb-4 relative">
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/produit_admin.png", event)}>
+                                            <Image
+                                                src="/biointer/produit_admin.png"
                                                 alt="Val Photo"
                                                 className="rounded-md cursor-pointer"
                                                 width={700}
@@ -122,8 +150,28 @@ export default function Page() {
                                         </div>
                                         
                                         <p className="mt-2">Interface administrateur pour gérer les produits.</p>
-                                        <p className="mt-2">Il y a aussi une interface pour gérer les types, les maisons et les commandes à valider.</p>
+                                        <p className="mt-2">Il existe aussi une interface pour gérer les types, les maisons et les commandes à valider.</p>
                                     </div>
+                                    <div className="mb-4 relative">
+                                        <div className="hover-overlay" onClick={(event) => openModal("/biointer/commande_admin.png", event)}>
+                                            <Image
+                                                src="/biointer/commande_admin.png"
+                                                alt="Val Photo"
+                                                className="rounded-md cursor-pointer"
+                                                width={700}
+                                                height={100}
+                                                priority
+                                            />
+
+                                        </div>
+                                        
+                                        <p className="mt-2">Interface administrateur pour gérer les commandes.</p>
+                                        <p className="mt-2">L&apos;administrateur peut valider modifier ou supprimer la commande.</p>
+                                    </div>
+                                </div>
+                                <div className="mb-8">
+                                    <h2 className="text-3xl font-bold mb-4">Lien vers le git :</h2>
+                                    <a  href="https://github.com/vava56754/bio-international">cliquer ici</a>
                                 </div>
                             </div>
                         </div>
